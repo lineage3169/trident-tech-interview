@@ -69,7 +69,7 @@ const minusDisabled = computed(() => count.value === 0)
     align-items: center;
     cursor: pointer;
     box-sizing: border-box;
-    outline: none;
+    border: none;
   }
 }
 </style>
