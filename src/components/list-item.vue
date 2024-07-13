@@ -70,6 +70,9 @@ const minusDisabled = computed(() => count.value === 0)
     cursor: pointer;
     box-sizing: border-box;
     border: none;
+    &--disabled {
+      cursor: not-allowed;
+    }
   }
 }
 </style>
