@@ -24,9 +24,13 @@ const babyAddDisabled = computed(() => {
 })
 
 watch(aldult, (newVal, oldVal) => {
-  if ((newVal < oldVal) && baby.value > 0) {
+  if ((newVal < oldVal) && newVal < baby.value) {
     baby.value--
-  } 
+  }
+  if (newVal === 0) {
+    child.value = 0
+    baby.value = 0
+  }
 })
 
 </script>
